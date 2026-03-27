@@ -437,6 +437,11 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
+
+    @media (max-width: 700px) {
+      #featured-card { grid-template-columns: 1fr !important; }
+      #shop-grid { grid-template-columns: 1fr !important; }
+    }
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -553,7 +558,7 @@
       <p class="sec-sub">Von der einfachen Visitenkarte bis zum vollständigen Online-Shop – ich kümmere mich um alles.</p>
     </div>
     <!-- Featured: Website (full width) -->
-    <div class="svc featured" style="margin-bottom:1.2rem; display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center;">
+    <div class="svc featured" style="margin-bottom:1.2rem; display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center;" id="featured-card">
       <div>
         <span class="svc-badge web-ft">⭐ Unser Einstiegsangebot</span>
         <h3 style="font-size:1.6rem; margin-bottom:0.7rem;">Professionelle Website</h3>
@@ -578,7 +583,7 @@
     </div>
 
     <!-- WordPress & Shopify side by side -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.2rem;">
+    <div id="shop-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:1.2rem;">
       <div class="svc">
         <span class="svc-badge wp">WordPress / WooCommerce</span>
         <h3>WordPress Online-Shop</h3>
@@ -769,6 +774,8 @@
         </div>
         <div class="fg"><label>Erzähl mir von deinem Projekt</label><textarea placeholder="Was machst du, was soll die Website leisten, hast du Wünsche oder Beispiele?"></textarea></div>
         <button type="submit" class="btn-fill" style="width:100%;padding:0.9rem;text-align:center;">Kostenlosen Entwurf anfragen →</button>
+        <input type="hidden" name="_subject" value="Neue Anfrage von qaiserwebdesign.de" />
+        <input type="hidden" name="_language" value="de" />
       </form>
     </div>
   </div>
