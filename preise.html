@@ -62,7 +62,7 @@
     .btn-p:hover{background:#c94d10;transform:translateY(-2px)}
     .btn-g{display:inline-block;background:transparent;color:var(--ink);padding:0.8rem 1.7rem;border-radius:8px;font-size:0.9rem;font-weight:500;text-decoration:none;border:1.5px solid var(--border);transition:all 0.2s}
     .btn-g:hover{border-color:var(--ink)}
-    @media(max-width:768px){.wrap{padding:0 1.2rem}}
+    @media(max-width:768px){.wrap{padding:0 1.2rem}
   </style>
 </head>
 <body>
@@ -91,29 +91,29 @@
 <div class="ph"><div class="ph-tag">Preise</div><h1>Transparent. Fair.<br>Zahlung nur bei Zufriedenheit.</h1><p>Keine versteckten Kosten. Du siehst den Entwurf zuerst – und zahlst erst wenn du begeistert bist.</p></div>
 <section class="sec sec-c"><div class="wrap">
   <style>
-    .price-grid{{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:3rem}}
-    .pc2{{background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:2rem;display:flex;flex-direction:column;position:relative}}
-    .pc2.pop{{background:var(--ink);color:#fff;border-color:var(--ink)}}
-    .pop-tag{{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--orange);color:#fff;font-size:0.68rem;font-weight:700;padding:0.25rem 0.9rem;border-radius:100px;white-space:nowrap}}
-    .pc2-n{{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:0.2rem;color:var(--ink)}}
-    .pc2.pop .pc2-n{{color:#fff}}
-    .pc2-d{{font-size:0.75rem;color:var(--muted);margin-bottom:1rem}}
-    .pc2.pop .pc2-d{{color:rgba(255,255,255,0.6)}}
-    .pc2-p{{margin-bottom:1.3rem}}
-    .pc2-pn{{font-family:'Playfair Display',serif;font-size:2.3rem;font-weight:800;color:var(--ink);line-height:1}}
-    .pc2.pop .pc2-pn{{color:#fff}}
-    .pc2 ul{{list-style:none;flex:1;margin-bottom:1.3rem}}
-    .pc2 ul li{{font-size:0.82rem;padding:0.38rem 0;border-bottom:1px solid var(--border);display:flex;gap:0.5rem;color:#3d3d3a}}
-    .pc2.pop ul li{{color:rgba(255,255,255,0.8);border-bottom-color:rgba(255,255,255,0.1)}}
-    .pc2 ul li:last-child{{border-bottom:none}}
-    .pc2 ul li::before{{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}}
-    .pc2.pop ul li::before{{color:#6ee3a5}}
-    .tabs2{{display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem}}
-    .tab2{{padding:0.45rem 1.1rem;border-radius:6px;font-size:0.82rem;font-weight:500;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif}}
-    .tab2.on{{background:var(--ink);color:#fff;border-color:var(--ink)}}
-    .pg{{display:none}}
-    .pg.on{{display:grid}}
-    @media(max-width:768px){{.price-grid{{grid-template-columns:1fr}}}}
+    .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:3rem}
+    .pc2{background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:2rem;display:flex;flex-direction:column;position:relative}
+    .pc2.pop{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .pop-tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--orange);color:#fff;font-size:0.68rem;font-weight:700;padding:0.25rem 0.9rem;border-radius:100px;white-space:nowrap}
+    .pc2-n{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;margin-bottom:0.2rem;color:var(--ink)}
+    .pc2.pop .pc2-n{color:#fff}
+    .pc2-d{font-size:0.75rem;color:var(--muted);margin-bottom:1rem}
+    .pc2.pop .pc2-d{color:rgba(255,255,255,0.6)}
+    .pc2-p{margin-bottom:1.3rem}
+    .pc2-pn{font-family:'Playfair Display',serif;font-size:2.3rem;font-weight:800;color:var(--ink);line-height:1}
+    .pc2.pop .pc2-pn{color:#fff}
+    .pc2 ul{list-style:none;flex:1;margin-bottom:1.3rem}
+    .pc2 ul li{font-size:0.82rem;padding:0.38rem 0;border-bottom:1px solid var(--border);display:flex;gap:0.5rem;color:#3d3d3a}
+    .pc2.pop ul li{color:rgba(255,255,255,0.8);border-bottom-color:rgba(255,255,255,0.1)}
+    .pc2 ul li:last-child{border-bottom:none}
+    .pc2 ul li::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0}
+    .pc2.pop ul li::before{color:#6ee3a5}
+    .tabs2{display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem}
+    .tab2{padding:0.45rem 1.1rem;border-radius:6px;font-size:0.82rem;font-weight:500;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif}
+    .tab2.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .pg{display:none}
+    .pg.on{display:grid}
+    @media(max-width:768px){.price-grid{grid-template-columns:1fr}}
   </style>
   <div class="tabs2">
     <button class="tab2 on" onclick="sw('w',this)">Website</button>
@@ -135,7 +135,7 @@
     <div class="pc2 pop"><div class="pop-tag">⭐ Beliebteste Wahl</div><div class="pc2-n">Shopify Business</div><div class="pc2-d">Professionelle Shops</div><div class="pc2-p"><div class="pc2-pn">999€</div></div><ul><li>Vollst. Einrichtung</li><li>Apps &amp; Automatisierungen</li><li>Bis 100 Produkte</li><li>Impressum &amp; Datenschutz</li></ul><a href="/kontakt.html" class="btn-p" style="text-align:center;">Anfragen</a></div>
     <div class="pc2"><div class="pc2-n">Shopify Premium</div><div class="pc2-d">Anspruchsvolle Projekte</div><div class="pc2-p"><div class="pc2-pn">1.799€</div></div><ul><li>Custom-Theme</li><li>Externe Systeme</li><li>Unbegrenzte Produkte</li><li>Impressum &amp; Datenschutz</li></ul><a href="/kontakt.html" class="btn-g" style="text-align:center;">Anfragen</a></div>
   </div>
-  <script>function sw(id,btn){{document.querySelectorAll('.pg').forEach(function(p){{p.classList.remove('on')}});document.querySelectorAll('.tab2').forEach(function(b){{b.classList.remove('on')}});document.getElementById('p'+id).classList.add('on');btn.classList.add('on');}}</script>
+  <script>function sw(id,btn){document.querySelectorAll('.pg').forEach(function(p){p.classList.remove('on')});document.querySelectorAll('.tab2').forEach(function(b){b.classList.remove('on')});document.getElementById('p'+id).classList.add('on');btn.classList.add('on');}</script>
 </div></section>
 <footer>
   <div class="ft-wrap">
