@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html, body { overflow-x: hidden; max-width: 100%; }
+    * { max-width: 100%; }
+    img { max-width: 100%; height: auto; }
     :root{--cream:#f7f4ef;--white:#fff;--ink:#1a1a18;--muted:#8a8880;--border:#e4e0d8;--orange:#e05c1a;--green:#2d6a4f}
     body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
     
@@ -44,7 +47,7 @@
     .ft-links { display: flex; gap: 1.4rem; }
     .ft-links a { font-size: 0.75rem; color: rgba(255,255,255,0.4); text-decoration: none; }
     .ft-links a:hover { color: #fff; }
-    .wrap{max-width:1080px;margin:0 auto;padding:0 2rem}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 2rem;width:100%;}
     .sec{padding:5rem 2rem}
     .sec-w{background:#fff}
     .sec-c{background:var(--cream)}
@@ -90,7 +93,7 @@
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">1. Datenschutz auf einen Blick</h2>
   <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Die folgenden Hinweise geben einen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">2. Verantwortlicher</h2>
-  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Qaiser Ahmad<br/>QaiserWebDesign<br/>Einsteinstraße 5<br/>63303 Dreieich<br/>E-Mail: qaiserahmad@outlook.com</p>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Qaiser Ahmad<br/>QaiserWebDesign<br/>Einsteinstraße 5<br/>63303 Dreieich<br/>E-Mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f584949c869087949d989491b59a8081999a9a9edb969a98">[email&#160;protected]</a></p>
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">3. Kontaktformular</h2>
   <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage gespeichert. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Ihre Daten werden nach abschließender Bearbeitung gelöscht.</p>
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">4. Formspree</h2>
@@ -98,7 +101,7 @@
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">5. Hosting</h2>
   <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Diese Website wird bei Cloudflare Pages gehostet (Cloudflare Inc., USA). Weitere Informationen: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" style="color:var(--orange);">cloudflare.com/privacypolicy</a></p>
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">6. Ihre Rechte</h2>
-  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten (Art. 15–18 DSGVO). Kontakt: qaiserahmad@outlook.com</p>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten (Art. 15–18 DSGVO). Kontakt: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4736262e342235262f2a2623072832332b28282c6924282a">[email&#160;protected]</a></p>
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">7. Beschwerderecht</h2>
   <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Zuständige Aufsichtsbehörde: Hessischer Beauftragter für Datenschutz und Informationsfreiheit, Postfach 3163, 65021 Wiesbaden. <a href="https://www.datenschutz.hessen.de" target="_blank" style="color:var(--orange);">datenschutz.hessen.de</a></p>
 </div>
@@ -113,7 +116,7 @@
     </div>
   </div>
 </footer>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var ham = document.getElementById('ham');
 var mob = document.getElementById('mob');
 ham.addEventListener('click', function() {
@@ -124,17 +127,4 @@ ham.addEventListener('click', function() {
     spans[1].style.opacity = '0';
     spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
   } else {
-    spans[0].style.transform = '';
-    spans[1].style.opacity = '';
-    spans[2].style.transform = '';
-  }
-});
-mob.querySelectorAll('a').forEach(function(a) {
-  a.addEventListener('click', function() {
-    mob.classList.remove('open');
-    ham.querySelectorAll('span').forEach(function(s){ s.style.transform=''; s.style.opacity=''; });
-  });
-});
-</script>
-</body>
-</html>
+    spans[0

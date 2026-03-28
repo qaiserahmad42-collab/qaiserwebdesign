@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html, body { overflow-x: hidden; max-width: 100%; }
+    * { max-width: 100%; }
+    img { max-width: 100%; height: auto; }
     :root{--cream:#f7f4ef;--white:#fff;--ink:#1a1a18;--muted:#8a8880;--border:#e4e0d8;--orange:#e05c1a;--green:#2d6a4f}
     body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
     
@@ -44,7 +47,7 @@
     .ft-links { display: flex; gap: 1.4rem; }
     .ft-links a { font-size: 0.75rem; color: rgba(255,255,255,0.4); text-decoration: none; }
     .ft-links a:hover { color: #fff; }
-    .wrap{max-width:1080px;margin:0 auto;padding:0 2rem}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 2rem;width:100%;}
     .sec{padding:5rem 2rem}
     .sec-w{background:#fff}
     .sec-c{background:var(--cream)}
@@ -90,7 +93,7 @@
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Angaben gemäß § 5 TMG</h2>
   <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;margin-bottom:0.5rem;">Qaiser Ahmad<br/>QaiserWebDesign<br/>Einsteinstraße 5<br/>63303 Dreieich<br/>Deutschland</p>
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Kontakt</h2>
-  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">E-Mail: qaiserahmad@outlook.com<br/>Website: https://qaiserwebdesign.de</p>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">E-Mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7a0b1b13091f081b12171b1e3a150f0e1615151154191517">[email&#160;protected]</a><br/>Website: https://qaiserwebdesign.de</p>
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Verantwortlich nach § 55 Abs. 2 RStV</h2>
   <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Qaiser Ahmad, Einsteinstraße 5, 63303 Dreieich</p>
   <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Umsatzsteuer</h2>
@@ -113,7 +116,7 @@
     </div>
   </div>
 </footer>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var ham = document.getElementById('ham');
 var mob = document.getElementById('mob');
 ham.addEventListener('click', function() {
@@ -129,12 +132,4 @@ ham.addEventListener('click', function() {
     spans[2].style.transform = '';
   }
 });
-mob.querySelectorAll('a').forEach(function(a) {
-  a.addEventListener('click', function() {
-    mob.classList.remove('open');
-    ham.querySelectorAll('span').forEach(function(s){ s.style.transform=''; s.style.opacity=''; });
-  });
-});
-</script>
-</body>
-</html>
+mob.querySelectorAll('a').

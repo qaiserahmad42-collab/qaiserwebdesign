@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html, body { overflow-x: hidden; max-width: 100%; }
+    * { max-width: 100%; }
+    img { max-width: 100%; height: auto; }
     :root{--cream:#f7f4ef;--white:#fff;--ink:#1a1a18;--muted:#8a8880;--border:#e4e0d8;--orange:#e05c1a;--green:#2d6a4f}
     html{scroll-behavior:smooth}
     body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
@@ -426,7 +429,7 @@
       <div class="cti">
         <h3>So erreichst du mich</h3>
         <div class="cii"><div class="cig">📍</div><div><h4>Standort</h4><p>Dreieich (Frankfurt Rhein-Main)</p></div></div>
-        <div class="cii"><div class="cig">📧</div><div><h4>E-Mail</h4><p>qaiserahmad@outlook.com</p></div></div>
+        <div class="cii"><div class="cig">📧</div><div><h4>E-Mail</h4><p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f485959d879186959c999590b49b8180989b9b9fda979b99">[email&#160;protected]</a></p></div></div>
         <div class="cii"><div class="cig">⏱️</div><div><h4>Antwortzeit</h4><p>Innerhalb von 24 Stunden</p></div></div>
         <div class="cii"><div class="cig">🌍</div><div><h4>Arbeitsweise</h4><p>Remote – deutschlandweit</p></div></div>
       </div>
@@ -467,7 +470,7 @@
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function showTab(id,btn){
   document.querySelectorAll('.pt').forEach(function(t){t.classList.remove('on');});
   document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});
@@ -495,12 +498,4 @@ ham.addEventListener('click', function() {
     spans[2].style.transform = '';
   }
 });
-mob.querySelectorAll('a').forEach(function(a) {
-  a.addEventListener('click', function() {
-    mob.classList.remove('open');
-    ham.querySelectorAll('span').forEach(function(s){ s.style.transform=''; s.style.opacity=''; });
-  });
-});
-</script>
-</body>
-</html>
+mob.querySelectorAll('a').
