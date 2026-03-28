@@ -127,21 +127,6 @@
     .addon:hover{background:#fdf9f5}
     .addon-n{font-size:0.82rem;color:#3d3d3a}
     .addon-p{font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:var(--orange);white-space:nowrap}
-    /* PRICING */
-    .tabs{display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:1.5rem}
-    .tab{padding:0.45rem 1.1rem;border-radius:6px;font-size:0.82rem;font-weight:500;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:all 0.2s}
-    .tab.on,.tab:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
-    .pt{width:100%;border-collapse:collapse;display:none}
-    .pt.on{display:table}
-    .pt th{font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);padding:0.75rem 1rem;text-align:left;border-bottom:1.5px solid var(--border)}
-    .pt td{padding:1rem;border-bottom:1px solid var(--border);font-size:0.86rem;vertical-align:top}
-    .pt tr:last-child td{border-bottom:none}
-    .pt tr:hover td{background:#fdf9f5}
-    .pkg-n{font-weight:600;color:var(--ink);font-size:0.92rem}
-    .pkg-d{font-size:0.75rem;color:var(--muted);margin-top:0.15rem}
-    .pkg-p{font-family:'Playfair Display',serif;font-weight:800;font-size:1.1rem;color:var(--orange)}
-    .pkg-i{color:var(--muted);font-size:0.82rem;line-height:1.65}
-    .pop{display:inline-block;font-size:0.62rem;font-weight:700;background:rgba(224,92,26,0.12);color:var(--orange);padding:0.1rem 0.45rem;border-radius:100px;margin-left:0.35rem}
     /* WHY */
     .why-g{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start}
     .wpts{display:flex;flex-direction:column;gap:1.6rem}
@@ -197,6 +182,8 @@
       .addons{grid-template-columns:repeat(2,1fr)}
       .steps{grid-template-columns:repeat(2,1fr)}
       .testi-grid{grid-template-columns:1fr}
+      #featured-card{grid-template-columns:1fr!important}
+      #shop-grid{grid-template-columns:1fr!important}
     }
     @media(max-width:600px){
       .sec{padding:4rem 1.2rem}
@@ -370,43 +357,6 @@
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="sec sec-c" id="preise">
-  <div class="wrap">
-    <div class="lbl">Preise</div>
-    <h2 class="ttl">Transparent &amp; fair</h2>
-    <p class="sub">Zahlung erst nach Freigabe deines Entwurfs – keine versteckten Kosten.</p>
-    <div class="tabs">
-      <button class="tab on" onclick="showTab('w',this)">Website</button>
-      <button class="tab" onclick="showTab('wp',this)">WordPress</button>
-      <button class="tab" onclick="showTab('sh',this)">Shopify</button>
-    </div>
-    <table class="pt on" id="tw">
-      <thead><tr><th>Paket</th><th>Enthält</th><th>Preis</th></tr></thead>
-      <tbody>
-        <tr><td><div class="pkg-n">Starter</div><div class="pkg-d">Selbstständige &amp; Einsteiger</div></td><td class="pkg-i">1-seitige Website · Domain · Hosting · Kontaktformular · Impressum · Datenschutz · Google-Indexierung</td><td><span class="pkg-p">ab 299 €</span></td></tr>
-        <tr><td><div class="pkg-n">Business <span class="pop">Beliebt</span></div><div class="pkg-d">KMU &amp; Handwerker</div></td><td class="pkg-i">Bis 5 Seiten · SEO-Basis · Google Maps · Social Links · Impressum · Datenschutz · Cloudflare</td><td><span class="pkg-p">ab 499 €</span></td></tr>
-        <tr><td><div class="pkg-n">Premium</div><div class="pkg-d">Unternehmen &amp; Agenturen</div></td><td class="pkg-i">Bis 10 Seiten · Blog · Erweitertes SEO · Analytics · Mehrsprachigkeit · Cloudflare Premium</td><td><span class="pkg-p">ab 799 €</span></td></tr>
-      </tbody>
-    </table>
-    <table class="pt" id="twp">
-      <thead><tr><th>Paket</th><th>Enthält</th><th>Preis</th></tr></thead>
-      <tbody>
-        <tr><td><div class="pkg-n">WooCommerce Starter</div><div class="pkg-d">Einstieg E-Commerce</div></td><td class="pkg-i">Bis 20 Produkte · PayPal &amp; Stripe · Versand · SSL · Backup · Impressum · Datenschutz</td><td><span class="pkg-p">ab 699 €</span></td></tr>
-        <tr><td><div class="pkg-n">WooCommerce Business <span class="pop">Beliebt</span></div><div class="pkg-d">Wachsende Shops</div></td><td class="pkg-i">Bis 100 Produkte · Erweitertes SEO · Filter · Gutscheine · Analytics · Klarna</td><td><span class="pkg-p">ab 1.199 €</span></td></tr>
-      </tbody>
-    </table>
-    <table class="pt" id="tsh">
-      <thead><tr><th>Paket</th><th>Enthält</th><th>Preis</th></tr></thead>
-      <tbody>
-        <tr><td><div class="pkg-n">Shopify Starter</div><div class="pkg-d">Schnell starten</div></td><td class="pkg-i">Shop-Einrichtung · Theme · Bis 20 Produkte · Payment · Domain · Impressum · Datenschutz</td><td><span class="pkg-p">ab 599 €</span></td></tr>
-        <tr><td><div class="pkg-n">Shopify Business <span class="pop">Beliebt</span></div><div class="pkg-d">Professionelle Shops</div></td><td class="pkg-i">Vollst. Einrichtung · Apps · Automatisierungen · Bis 100 Produkte · SEO</td><td><span class="pkg-p">ab 999 €</span></td></tr>
-        <tr><td><div class="pkg-n">Shopify Premium</div><div class="pkg-d">Anspruchsvolle Projekte</div></td><td class="pkg-i">Custom-Theme · Externe Systeme · Unbegrenzte Produkte · Priority-Support</td><td><span class="pkg-p">ab 1.799 €</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
 <!-- WHY -->
 <section class="sec sec-w" id="warum">
   <div class="wrap">
@@ -532,18 +482,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-function showTab(id,btn){
-  document.querySelectorAll('.pt').forEach(function(t){t.classList.remove('on');});
-  document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on');});
-  document.getElementById('t'+id).classList.add('on');
-  btn.classList.add('on');
-}
-@media(max-width:700px){
-  document.getElementById('featured-card').style.gridTemplateColumns='1fr';
-  document.getElementById('shop-grid').style.gridTemplateColumns='1fr';
-}
-</script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script>
 var ham = document.getElementById('ham');
 var mob = document.getElementById('mob');

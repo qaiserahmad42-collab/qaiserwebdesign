@@ -63,7 +63,10 @@
     .btn-g{display:inline-block;background:transparent;color:var(--ink);padding:0.8rem 1.7rem;border-radius:8px;font-size:0.9rem;font-weight:500;text-decoration:none;border:1.5px solid var(--border);transition:all 0.2s}
     .btn-g:hover{border-color:var(--ink)}
     @media(max-width:900px){
-      .wrap[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+      div[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}
+      div[style*="grid-template-columns: 1fr 1fr"]{grid-template-columns:1fr!important}
+      div[style*="grid-template-columns:repeat(2"]{grid-template-columns:1fr!important}
+      .wrap[style*="grid-template-columns"]{grid-template-columns:1fr!important}
     }
     @media(max-width:768px){.wrap{padding:0 1.2rem}}
   </style>
