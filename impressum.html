@@ -5,121 +5,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Impressum | QaiserWebDesign – Qaiser Ahmad, Dreieich</title>
   <meta name="description" content="Impressum von QaiserWebDesign – Qaiser Ahmad, Einsteinstraße 5, 63303 Dreieich."/>
-  <meta name="robots" content="noindex, follow"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <meta name="keywords" content=""/>
+  <link rel="canonical" href="https://qaiserwebdesign.de/impressum.html"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--cream:#f7f4ef;--white:#fff;--ink:#1a1a18;--ink2:#3d3d3a;--muted:#8a8880;--border:#e4e0d8;--orange:#e05c1a}
+    :root{--cream:#f7f4ef;--white:#fff;--ink:#1a1a18;--muted:#8a8880;--border:#e4e0d8;--orange:#e05c1a;--green:#2d6a4f}
     body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
-    .content{max-width:780px;margin:0 auto;padding:8rem 2rem 5rem}
-    .content h1{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:800;color:var(--ink);margin-bottom:2.5rem}
-    .content h2{font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem}
-    .content p{font-size:0.92rem;color:var(--ink2);line-height:1.75;margin-bottom:0.5rem}
-    .content a{color:var(--orange)}
-    footer{background:var(--ink);padding:2rem}
-    .fi{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-    .fl{font-family:'Playfair Display',serif;font-weight:800;font-size:1.2rem;color:#fff;text-decoration:none}
-    .fl em{font-style:normal;color:var(--orange)}
-    .fn{font-size:0.75rem;color:rgba(255,255,255,0.35)}
-    .fls{display:flex;gap:1.4rem}
-    .fls a{font-size:0.75rem;color:rgba(255,255,255,0.4);text-decoration:none}
-    .fls a:hover{color:#fff}
-    @media(max-width:600px){}
+    
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: 60px; background: rgba(247,244,239,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid #e4e0d8; }
+    .nav-wrap { max-width: 1080px; margin: 0 auto; padding: 0 2rem; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: #1a1a18; text-decoration: none; }
+    .nav-logo em { font-style: normal; color: #e05c1a; }
+    .nav-list { display: flex; gap: 1.8rem; list-style: none; align-items: center; }
+    .nav-list a { font-size: 0.85rem; color: #3d3d3a; text-decoration: none; font-weight: 500; }
+    .nav-list a:hover { color: #e05c1a; }
+    .nav-btn { background: #1a1a18; color: #fff; padding: 0.45rem 1.1rem; border-radius: 6px; font-weight: 600; }
+    .nav-btn:hover { background: #e05c1a !important; }
+    /* HAMBURGER */
+    .ham { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+    .ham span { display: block; width: 24px; height: 2px; background: #1a1a18; border-radius: 2px; transition: all 0.3s; }
+    .mob { display: none; position: fixed; top: 60px; left: 0; right: 0; z-index: 999; background: #fff; border-bottom: 2px solid #e4e0d8; flex-direction: column; box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+    .mob a { display: block; padding: 1rem 2rem; font-size: 1rem; font-weight: 500; color: #1a1a18; text-decoration: none; border-bottom: 1px solid #e4e0d8; }
+    .mob a.mob-cta { background: #e05c1a; color: #fff; font-weight: 700; text-align: center; border: none; }
+    .mob.open { display: flex; }
+    @media (max-width: 768px) {
+      .nav-list { display: none; }
+      .ham { display: flex; }
     }
     
-    .mob-
-    @media(max-width:768px) { }
-  
-    nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(247,244,239,0.97);backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8;}
-    .ni{max-width:1080px;margin:0 auto;padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between;}
-    .nl{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:#1a1a18;text-decoration:none;}
-    .nl em{font-style:normal;color:#e05c1a;}
-    .nm{display:flex;gap:1.8rem;list-style:none;align-items:center;}
-    .nm a{font-size:0.85rem;color:#3d3d3a;text-decoration:none;font-weight:500;}
-    .nm a:hover{color:#e05c1a;}
-    .nm .nc{background:#1a1a18!important;color:#fff!important;padding:0.45rem 1.1rem;border-radius:6px;font-weight:600!important;}
-    .nm .nc:hover{background:#e05c1a!important;}
-    .hb{display:none;background:none;border:none;font-size:1.9rem;cursor:pointer;color:#1a1a18;width:40px;height:40px;align-items:center;justify-content:center;padding:0;}
-    .hd{display:none;flex-direction:column;position:fixed;top:60px;left:0;right:0;z-index:999;background:#fff;border-bottom:2px solid #e4e0d8;box-shadow:0 6px 20px rgba(0,0,0,0.1);}
-    .hd a{display:block;padding:1.1rem 2rem;font-size:1rem;font-weight:500;color:#1a1a18;text-decoration:none;border-bottom:1px solid #e4e0d8;}
-    .hd a:last-child{background:#e05c1a;color:#fff!important;font-weight:700;text-align:center;border:none;}
-    .hd.on{display:flex;}
-    @media(max-width:768px){.nm{display:none!important;}.hb{display:flex!important;}}
+    footer { background: #1a1a18; padding: 2rem; }
+    .ft-wrap { max-width: 1080px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .ft-logo { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .ft-logo em { font-style: normal; color: #e05c1a; }
+    .ft-note { font-size: 0.75rem; color: rgba(255,255,255,0.35); }
+    .ft-links { display: flex; gap: 1.4rem; }
+    .ft-links a { font-size: 0.75rem; color: rgba(255,255,255,0.4); text-decoration: none; }
+    .ft-links a:hover { color: #fff; }
+    .wrap{max-width:1080px;margin:0 auto;padding:0 2rem}
+    .sec{padding:5rem 2rem}
+    .sec-w{background:#fff}
+    .sec-c{background:var(--cream)}
+    .lbl{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:0.5rem}
+    .ttl{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700;color:var(--ink);margin-bottom:0.6rem;line-height:1.15}
+    .sub{font-size:0.92rem;color:var(--muted);font-weight:300;line-height:1.75;max-width:540px;margin-bottom:2.5rem}
+    .ph{padding:8rem 2rem 4rem;text-align:center;background:#fff;border-bottom:1px solid var(--border)}
+    .ph-tag{display:inline-block;font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:0.8rem}
+    .ph h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,3rem);font-weight:800;color:var(--ink);margin-bottom:1rem;line-height:1.1}
+    .ph p{font-size:0.97rem;color:var(--muted);max-width:580px;margin:0 auto;font-weight:300;line-height:1.75}
+    .btn-p{display:inline-block;background:var(--orange);color:#fff;padding:0.8rem 1.7rem;border-radius:8px;font-size:0.9rem;font-weight:600;text-decoration:none;transition:background 0.2s,transform 0.2s;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif}
+    .btn-p:hover{background:#c94d10;transform:translateY(-2px)}
+    .btn-g{display:inline-block;background:transparent;color:var(--ink);padding:0.8rem 1.7rem;border-radius:8px;font-size:0.9rem;font-weight:500;text-decoration:none;border:1.5px solid var(--border);transition:all 0.2s}
+    .btn-g:hover{border-color:var(--ink)}
+    @media(max-width:768px){.wrap{padding:0 1.2rem}}
   </style>
 </head>
 <body>
 <nav>
-  <div class="ni">
-    <a href="/" class="nl">Qaiser<em>WebDesign</em></a>
-    <ul class="nm">
+  <div class="nav-wrap">
+    <a href="/" class="nav-logo">Qaiser<em>WebDesign</em></a>
+    <ul class="nav-list">
       <li><a href="/">Startseite</a></li>
       <li><a href="/leistungen.html">Leistungen</a></li>
       <li><a href="/preise.html">Preise</a></li>
       <li><a href="/ueber-mich.html">Über mich</a></li>
-      <li><a href="/kontakt.html" class="nc">Jetzt anfragen</a></li>
+      <li><a href="/kontakt.html" class="nav-btn">Jetzt anfragen</a></li>
     </ul>
-    <button class="hb" id="hb">☰</button>
+    <button class="ham" id="ham" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
-<div class="hd" id="hd">
+<div class="mob" id="mob">
   <a href="/">Startseite</a>
   <a href="/leistungen.html">Leistungen</a>
   <a href="/preise.html">Preise</a>
   <a href="/ueber-mich.html">Über mich</a>
-  <a href="/kontakt.html">Jetzt anfragen</a>
+  <a href="/kontakt.html" class="mob-cta">Jetzt anfragen</a>
 </div>
-
-
-
-
-<div class="content">
-  <h1>Impressum</h1>
-
-  <h2>Angaben gemäß § 5 TMG</h2>
-  <p>Qaiser Ahmad<br/>QaiserWebDesign<br/>Einsteinstraße 5<br/>63303 Dreieich<br/>Deutschland</p>
-
-  <h2>Kontakt</h2>
-  <p>E-Mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6b7a7afb5a3b4a7aeaba7a286a9b3b2aaa9a9ade8a5a9ab">[email&#160;protected]</a><br/>Website: https://qaiserwebdesign.de</p>
-
-  <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-  <p>Qaiser Ahmad<br/>Einsteinstraße 5<br/>63303 Dreieich</p>
-
-  <h2>Umsatzsteuer</h2>
-  <p>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).</p>
-
-  <h2>Streitschlichtung</h2>
-  <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a></p>
-  <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-
-  <h2>Haftung für Inhalte</h2>
-  <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
-
-  <h2>Haftung für Links</h2>
-  <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
-
-  <h2>Urheberrecht</h2>
-  <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+<div style="max-width:780px;margin:0 auto;padding:8rem 2rem 5rem;">
+  <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:800;color:var(--ink);margin-bottom:2.5rem;">Impressum</h1>
+  <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Angaben gemäß § 5 TMG</h2>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;margin-bottom:0.5rem;">Qaiser Ahmad<br/>QaiserWebDesign<br/>Einsteinstraße 5<br/>63303 Dreieich<br/>Deutschland</p>
+  <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Kontakt</h2>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">E-Mail: qaiserahmad@outlook.com<br/>Website: https://qaiserwebdesign.de</p>
+  <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Verantwortlich nach § 55 Abs. 2 RStV</h2>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Qaiser Ahmad, Einsteinstraße 5, 63303 Dreieich</p>
+  <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Umsatzsteuer</h2>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).</p>
+  <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Streitschlichtung</h2>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Die EU-Kommission stellt eine Plattform zur Online-Streitbeilegung bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" style="color:var(--orange);">https://ec.europa.eu/consumers/odr/</a><br/>Wir sind nicht verpflichtet, an Streitbeilegungsverfahren teilzunehmen.</p>
+  <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Haftung für Inhalte</h2>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte verantwortlich. Nach §§ 8 bis 10 TMG sind wir nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+  <h2 style="font-size:1rem;font-weight:600;color:var(--ink);margin:2rem 0 0.5rem;">Urheberrecht</h2>
+  <p style="font-size:0.92rem;color:#3d3d3a;line-height:1.75;">Die erstellten Inhalte unterliegen dem deutschen Urheberrecht. Vervielfältigung oder Verbreitung bedarf der schriftlichen Zustimmung des Erstellers.</p>
 </div>
-
-<footer><div class="fi">
-  <a href="/" class="fl">Qaiser<em>WebDesign</em></a>
-  <span class="fn">© 2025 QaiserWebDesign · Qaiser Ahmad · Dreieich</span>
-  <div class="
-
+<footer>
+  <div class="ft-wrap">
+    <a href="/" class="ft-logo">Qaiser<em>WebDesign</em></a>
+    <span class="ft-note">© 2025 QaiserWebDesign · Qaiser Ahmad · Dreieich</span>
+    <div class="ft-links">
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+      <a href="https://qaiserconsulting.de" target="_blank">QA &amp; Testing</a>
+    </div>
+  </div>
+</footer>
 <script>
-(function(){
-  var btn=document.getElementById('hb');
-  var drp=document.getElementById('hd');
-  if(!btn||!drp)return;
-  btn.onclick=function(){
-    drp.classList.toggle('on');
-    btn.textContent=drp.classList.contains('on')?'✕':'☰';
-  };
-  drp.querySelectorAll('a').forEach(function(a){
-    a.onclick=function(){drp.classList.remove('on');btn.textContent='☰';};
+var ham = document.getElementById('ham');
+var mob = document.getElementById('mob');
+ham.addEventListener('click', function() {
+  mob.classList.toggle('open');
+  var spans = ham.querySelectorAll('span');
+  if (mob.classList.contains('open')) {
+    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+  } else {
+    spans[0].style.transform = '';
+    spans[1].style.opacity = '';
+    spans[2].style.transform = '';
+  }
+});
+mob.querySelectorAll('a').forEach(function(a) {
+  a.addEventListener('click', function() {
+    mob.classList.remove('open');
+    ham.querySelectorAll('span').forEach(function(s){ s.style.transform=''; s.style.opacity=''; });
   });
-})();
+});
 </script>
 </body>
 </html>
