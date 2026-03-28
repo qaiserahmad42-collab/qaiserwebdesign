@@ -145,6 +145,18 @@
     .ctg{display:grid;grid-template-columns:1fr 1.4fr;gap:3.5rem}
     /* TESTIMONIALS */
     .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+    /* PORTFOLIO */
+    .port-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:2rem}
+    .port-card{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all 0.2s}
+    .port-card:hover{box-shadow:0 8px 28px rgba(0,0,0,0.09);transform:translateY(-3px)}
+    .port-preview{height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .port-preview .port-label{position:absolute;top:0.8rem;left:0.8rem;font-size:0.62rem;font-weight:600;padding:0.2rem 0.6rem;border-radius:100px;letter-spacing:0.04em;text-transform:uppercase}
+    .port-info{padding:1.4rem}
+    .port-info h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:0.3rem}
+    .port-info .port-type{font-size:0.72rem;color:var(--orange);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem}
+    .port-info p{font-size:0.8rem;color:var(--muted);line-height:1.65}
+    .port-link{display:inline-block;margin-top:0.8rem;font-size:0.78rem;color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1.5px solid var(--border);padding-bottom:2px;transition:border-color 0.2s}
+    .port-link:hover{border-color:var(--orange);color:var(--orange)}
     .testi{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.8rem;position:relative}
     .testi-stars{color:var(--orange);font-size:0.85rem;letter-spacing:2px;margin-bottom:0.8rem}
     .testi-text{font-size:0.85rem;color:#3d3d3a;line-height:1.7;font-style:italic;margin-bottom:1.2rem}
@@ -182,6 +194,7 @@
       .addons{grid-template-columns:repeat(2,1fr)}
       .steps{grid-template-columns:repeat(2,1fr)}
       .testi-grid{grid-template-columns:1fr}
+      .port-grid{grid-template-columns:1fr}
       #featured-card{grid-template-columns:1fr!important}
       #shop-grid{grid-template-columns:1fr!important}
     }
@@ -381,6 +394,65 @@
           <div class="pcheck"><span class="pdot">✓</span>Zahlung erst nach deiner Freigabe</div>
           <div class="pcheck"><span class="pdot">✓</span>Impressum &amp; Datenschutz immer inklusive</div>
           <div class="pcheck"><span class="pdot">✓</span>Transparent &amp; auf Augenhöhe</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="sec sec-c">
+  <div class="wrap">
+    <div class="lbl">Referenzen</div>
+    <h2 class="ttl">Ausgewählte Projekte</h2>
+    <p class="sub">Echte Kundenprojekte und Konzeptarbeiten – jedes Projekt individuell gestaltet, kein Template.</p>
+    <div class="port-grid">
+      <div class="port-card">
+        <div class="port-preview" style="background:#1a1a18;">
+          <span style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:#fff;">Qaiser<span style="color:#e05c1a;">Consulting</span></span>
+          <span class="port-label" style="background:rgba(45,106,79,0.9);color:#fff;">Live-Projekt</span>
+        </div>
+        <div class="port-info">
+          <div class="port-type">QA-Consulting Website</div>
+          <h3>QaiserConsulting.de</h3>
+          <p>Mehrseitige Consulting-Website für QA- und Testmanagement-Dienstleistungen. Responsives Design, SEO-optimiert, Cloudflare-Hosting.</p>
+          <a href="https://qaiserconsulting.de" target="_blank" class="port-link">Website ansehen</a>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-preview" style="background:#0f1115;">
+          <span style="font-family:'DM Serif Display','Playfair Display',serif;font-size:1.6rem;font-weight:400;color:#d4a853;">Elektro Schäfer</span>
+          <span class="port-label" style="background:rgba(224,92,26,0.9);color:#fff;">Konzeptprojekt</span>
+        </div>
+        <div class="port-info">
+          <div class="port-type">Handwerker Website</div>
+          <h3>Elektro-Meisterbetrieb</h3>
+          <p>Dark-Theme Website für einen Elektriker-Meisterbetrieb. Leistungsübersicht, Zertifizierungen, Notdienst-Kontakt.</p>
+          <a href="/demo-handwerker.html" class="port-link">Konzept ansehen</a>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-preview" style="background:#faf8f5;border-bottom:1px solid var(--border);">
+          <span style="font-family:'Cormorant Garamond','Playfair Display',serif;font-size:1.6rem;font-weight:600;color:#3a3632;">Studio <span style="color:#c4917b;">Bella</span></span>
+          <span class="port-label" style="background:rgba(224,92,26,0.9);color:#fff;">Konzeptprojekt</span>
+        </div>
+        <div class="port-info">
+          <div class="port-type">Kosmetikstudio</div>
+          <h3>Beauty & Wellness</h3>
+          <p>Elegantes, warmes Design für ein Kosmetikstudio. Behandlungsübersicht mit Preisen, Öffnungszeiten, Terminbuchung.</p>
+          <a href="/demo-kosmetik.html" class="port-link">Konzept ansehen</a>
+        </div>
+      </div>
+      <div class="port-card">
+        <div class="port-preview" style="background:#f9f3eb;border-bottom:1px solid var(--border);">
+          <span style="font-family:'Fraunces','Playfair Display',serif;font-size:1.6rem;font-weight:700;color:#6b3a2a;">Café Morgenrot</span>
+          <span class="port-label" style="background:rgba(224,92,26,0.9);color:#fff;">Konzeptprojekt</span>
+        </div>
+        <div class="port-info">
+          <div class="port-type">Gastronomie</div>
+          <h3>Café & Spezialitätenkaffee</h3>
+          <p>Warmes, handwerkliches Design für ein Spezialitäten-Café. Speisekarte, Geschichte, Öffnungszeiten und Anfahrt.</p>
+          <a href="/demo-cafe.html" class="port-link">Konzept ansehen</a>
         </div>
       </div>
     </div>

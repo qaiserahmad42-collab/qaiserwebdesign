@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Studio Bella – Kosmetik & Wellness Dreieich</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#faf8f5;--rose:#c4917b;--dark:#3a3632;--text:#5a5652;--light:#f0ece6;--border:#e4ddd4}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--dark);line-height:1.6}
+html,body{overflow-x:hidden;max-width:100%}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(250,248,245,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--dark);text-decoration:none;letter-spacing:0.03em}
+.logo span{color:var(--rose)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--text);font-size:0.8rem;text-decoration:none;font-weight:400;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a:hover{color:var(--rose)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 4rem}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:400;line-height:1.15;margin-bottom:1rem;letter-spacing:0.02em}
+.hero h1 em{font-style:italic;color:var(--rose)}
+.hero p{font-size:0.92rem;color:var(--text);font-weight:300;max-width:440px;margin:0 auto 2.5rem;line-height:1.8}
+.btn{display:inline-block;background:var(--rose);color:#fff;padding:0.8rem 2.2rem;font-size:0.78rem;font-weight:500;text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.2s;border-radius:2px}
+.btn:hover{background:#b07d68;transform:translateY(-2px)}
+.btn-o{background:transparent;color:var(--dark);border:1px solid var(--border)}
+.btn-o:hover{border-color:var(--dark);background:transparent}
+.divider{width:40px;height:1px;background:var(--rose);margin:0 auto 1.5rem}
+.treatments{padding:6rem 2rem;background:var(--light)}
+.treatments .wrap{max-width:900px;margin:0 auto;text-align:center}
+.treatments h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;margin-bottom:0.3rem}
+.treatments .sub{color:var(--text);font-size:0.85rem;font-weight:300;margin-bottom:3rem}
+.treat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;text-align:left}
+.treat{background:var(--bg);border:1px solid var(--border);padding:2rem;transition:all 0.2s}
+.treat:hover{box-shadow:0 8px 30px rgba(0,0,0,0.06);transform:translateY(-3px)}
+.treat h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-bottom:0.3rem}
+.treat .price{font-size:0.78rem;color:var(--rose);font-weight:500;margin-bottom:0.8rem}
+.treat p{font-size:0.8rem;color:var(--text);font-weight:300;line-height:1.65}
+.about{padding:6rem 2rem}
+.about .wrap{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;margin-bottom:1rem}
+.about p{font-size:0.88rem;color:var(--text);font-weight:300;line-height:1.8;margin-bottom:1rem}
+.hours{background:var(--light);border:1px solid var(--border);padding:2rem}
+.hours h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;margin-bottom:1rem}
+.hours-row{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:0.82rem;color:var(--text)}
+.hours-row:last-child{border-bottom:none}
+.contact{padding:6rem 2rem;background:var(--light);text-align:center}
+.contact h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;margin-bottom:0.3rem}
+.contact p{color:var(--text);font-size:0.88rem;font-weight:300;margin-bottom:2rem}
+footer{padding:2rem;text-align:center;font-size:0.72rem;color:var(--text);border-top:1px solid var(--border)}
+footer a{color:var(--text);text-decoration:none}
+@media(max-width:768px){
+  .treat-grid{grid-template-columns:1fr}
+  .about .wrap{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#" class="logo">Studio <span>Bella</span></a>
+  <ul class="nav-links">
+    <li><a href="#behandlungen">Behandlungen</a></li>
+    <li><a href="#ueber">Über mich</a></li>
+    <li><a href="#kontakt">Termin</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div>
+    <div class="divider"></div>
+    <h1>Schönheit beginnt<br>mit <em>Wohlbefinden</em></h1>
+    <p>Professionelle Gesichtsbehandlungen, Waxing und Wellness in ruhiger Atmosphäre. Seit 2016 in Dreieich.</p>
+    <a href="#kontakt" class="btn">Termin vereinbaren</a>
+  </div>
+</section>
+<section class="treatments" id="behandlungen">
+  <div class="wrap">
+    <div class="divider"></div>
+    <h2>Behandlungen</h2>
+    <p class="sub">Individuell auf Ihren Hauttyp abgestimmt</p>
+    <div class="treat-grid">
+      <div class="treat">
+        <h3>Klassische Gesichtsbehandlung</h3>
+        <div class="price">ab 69 €</div>
+        <p>Tiefenreinigung, Peeling, Maske und Abschlusspflege – für ein frisches, strahlendes Hautbild.</p>
+      </div>
+      <div class="treat">
+        <h3>Anti-Aging Intensiv</h3>
+        <div class="price">ab 89 €</div>
+        <p>Kollagen-Behandlung mit Hyaluron-Serum und Ultraschall für sichtbar glattere Haut.</p>
+      </div>
+      <div class="treat">
+        <h3>Microneedling</h3>
+        <div class="price">ab 119 €</div>
+        <p>Stimuliert die körpereigene Kollagenproduktion. Ideal bei Narben, Falten und Pigmentstörungen.</p>
+      </div>
+      <div class="treat">
+        <h3>Waxing Ganzkörper</h3>
+        <div class="price">ab 49 €</div>
+        <p>Schonende Haarentfernung mit hochwertigem Warmwachs. Langanhaltend glatte Haut.</p>
+      </div>
+      <div class="treat">
+        <h3>Maniküre & Pediküre</h3>
+        <div class="price">ab 35 €</div>
+        <p>Klassisch oder mit Shellac-Lack. Gepflegte Hände und Füße bis ins Detail.</p>
+      </div>
+      <div class="treat">
+        <h3>Entspannungsmassage</h3>
+        <div class="price">ab 59 €</div>
+        <p>60 Minuten wohltuende Ganzkörpermassage mit ätherischen Ölen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about" id="ueber">
+  <div class="wrap">
+    <div>
+      <div class="divider" style="margin:0 0 1.5rem;"></div>
+      <h2>Willkommen bei Studio Bella</h2>
+      <p>Ich bin Elena Bella, staatlich geprüfte Kosmetikerin mit über 10 Jahren Erfahrung. In meinem Studio nehme ich mir Zeit für Sie – jede Behandlung wird individuell auf Ihre Bedürfnisse abgestimmt.</p>
+      <p>Mein Studio befindet sich zentral in Dreieich, nur 5 Gehminuten vom Bahnhof Dreieich-Buchschlag.</p>
+    </div>
+    <div class="hours">
+      <h3>Öffnungszeiten</h3>
+      <div class="hours-row"><span>Montag – Freitag</span><span>9:00 – 19:00</span></div>
+      <div class="hours-row"><span>Samstag</span><span>9:00 – 15:00</span></div>
+      <div class="hours-row"><span>Sonntag</span><span>geschlossen</span></div>
+      <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border);font-size:0.82rem;color:var(--text);">
+        Termine nach Vereinbarung auch außerhalb der Öffnungszeiten möglich.
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="kontakt">
+  <div class="divider"></div>
+  <h2>Termin vereinbaren</h2>
+  <p>Telefonisch, per WhatsApp oder E-Mail – ich freue mich auf Sie.</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="tel:+496103123456" class="btn">Anrufen</a>
+    <a href="#" class="btn btn-o">E-Mail schreiben</a>
+  </div>
+</section>
+<footer>
+  <p>Studio Bella · Elena Bella · Hauptstraße 24 · 63303 Dreieich</p>
+  <p style="margin-top:0.5rem;"><a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+  <p style="margin-top:1rem;font-size:0.65rem;color:rgba(0,0,0,0.25);">Konzeptprojekt – erstellt von QaiserWebDesign</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Elektro Schäfer – Elektriker Meisterbetrieb Frankfurt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0f1115;--card:#1a1c22;--gold:#d4a853;--text:#e8e6e1;--muted:#8a8880;--border:rgba(255,255,255,0.08)}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+html,body{overflow-x:hidden;max-width:100%}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(15,17,21,0.9);backdrop-filter:blur(10px)}
+.logo{font-family:'DM Serif Display',serif;font-size:1.2rem;color:var(--gold);text-decoration:none}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--muted);font-size:0.82rem;text-decoration:none;font-weight:500;letter-spacing:0.03em}
+.nav-links a:hover{color:var(--gold)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:8rem 2rem 4rem;max-width:900px;margin:0 auto}
+.hero-content h1{font-family:'DM Serif Display',serif;font-size:clamp(2.4rem,5vw,4rem);line-height:1.08;margin-bottom:1.5rem}
+.hero-content h1 span{color:var(--gold)}
+.hero-content p{font-size:1rem;color:var(--muted);line-height:1.8;max-width:520px;margin-bottom:2.5rem}
+.btn{display:inline-block;background:var(--gold);color:var(--bg);padding:0.85rem 2rem;font-size:0.85rem;font-weight:700;text-decoration:none;letter-spacing:0.05em;text-transform:uppercase;transition:all 0.2s}
+.btn:hover{background:#e8bd6a;transform:translateY(-2px)}
+.services{padding:6rem 2rem;border-top:1px solid var(--border)}
+.services .wrap{max-width:900px;margin:0 auto}
+.services h2{font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:0.5rem}
+.services .sub{color:var(--muted);font-size:0.88rem;margin-bottom:3rem}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.svc-item{background:var(--card);padding:2rem;transition:background 0.2s}
+.svc-item:hover{background:#22242b}
+.svc-item h3{font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;color:var(--text)}
+.svc-item p{font-size:0.8rem;color:var(--muted);line-height:1.65}
+.svc-item .num{font-family:'DM Serif Display',serif;font-size:2rem;color:rgba(212,168,83,0.2);margin-bottom:0.8rem}
+.about{padding:6rem 2rem;border-top:1px solid var(--border)}
+.about .wrap{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about h2{font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:1rem}
+.about p{font-size:0.88rem;color:var(--muted);line-height:1.8;margin-bottom:1rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.stat-n{font-family:'DM Serif Display',serif;font-size:2rem;color:var(--gold)}
+.stat-l{font-size:0.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em}
+.contact{padding:6rem 2rem;border-top:1px solid var(--border);text-align:center}
+.contact h2{font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:0.5rem}
+.contact p{color:var(--muted);font-size:0.88rem;margin-bottom:2rem}
+.contact .phone{font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--gold);text-decoration:none;display:block;margin-bottom:2rem}
+footer{padding:2rem;border-top:1px solid var(--border);text-align:center;font-size:0.72rem;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none}
+@media(max-width:768px){
+  .svc-grid{grid-template-columns:1fr}
+  .about .wrap{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .stats{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#" class="logo">Elektro Schäfer</a>
+  <ul class="nav-links">
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#ueber">Über uns</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Ihr <span>Elektriker</span> im Rhein-Main-Gebiet</h1>
+    <p>Meisterbetrieb seit 2008. Von der Steckdose bis zur kompletten Hausinstallation – zuverlässig, sauber, termingerecht.</p>
+    <a href="#kontakt" class="btn">Jetzt Termin anfragen</a>
+  </div>
+</section>
+<section class="services" id="leistungen">
+  <div class="wrap">
+    <h2>Leistungen</h2>
+    <p class="sub">Alles aus einer Hand – für Privat und Gewerbe.</p>
+    <div class="svc-grid">
+      <div class="svc-item"><div class="num">01</div><h3>Elektroinstallation</h3><p>Neuinstallation, Sanierung und Erweiterung bestehender Elektroanlagen in Wohn- und Gewerbegebäuden.</p></div>
+      <div class="svc-item"><div class="num">02</div><h3>Smart Home</h3><p>Intelligente Steuerung von Licht, Heizung und Sicherheit. KNX-zertifiziert.</p></div>
+      <div class="svc-item"><div class="num">03</div><h3>Photovoltaik</h3><p>Planung und Installation von Solaranlagen inkl. Speicherlösungen und Förderberatung.</p></div>
+      <div class="svc-item"><div class="num">04</div><h3>E-Mobilität</h3><p>Wallbox-Installation für Ihr Zuhause oder Unternehmen. KfW-förderfähig.</p></div>
+      <div class="svc-item"><div class="num">05</div><h3>Prüfung & Wartung</h3><p>E-Check, DGUV V3-Prüfung und regelmäßige Wartung Ihrer Anlagen.</p></div>
+      <div class="svc-item"><div class="num">06</div><h3>Notdienst</h3><p>24/7 erreichbar bei Stromausfällen und elektrischen Notfällen.</p></div>
+    </div>
+  </div>
+</section>
+<section class="about" id="ueber">
+  <div class="wrap">
+    <div>
+      <h2>Qualität aus Überzeugung</h2>
+      <p>Seit über 15 Jahren steht Elektro Schäfer für zuverlässige Elektrotechnik in Frankfurt und Umgebung. Als eingetragener Meisterbetrieb legen wir Wert auf saubere Arbeit, faire Preise und pünktliche Fertigstellung.</p>
+      <p>Ob Neubau, Altbausanierung oder gewerbliche Projekte – wir beraten Sie ehrlich und führen die Arbeiten fachgerecht durch.</p>
+      <div class="stats">
+        <div><div class="stat-n">15+</div><div class="stat-l">Jahre Erfahrung</div></div>
+        <div><div class="stat-n">800+</div><div class="stat-l">Projekte</div></div>
+        <div><div class="stat-n">24/7</div><div class="stat-l">Notdienst</div></div>
+      </div>
+    </div>
+    <div style="background:var(--card);border-radius:8px;padding:2.5rem;border:1px solid var(--border);">
+      <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;margin-bottom:1.2rem;">Zertifizierungen</h3>
+      <div style="display:flex;flex-direction:column;gap:0.7rem;">
+        <div style="font-size:0.82rem;color:var(--muted);padding:0.6rem 0;border-bottom:1px solid var(--border);">Elektro-Meisterbetrieb (HWK)</div>
+        <div style="font-size:0.82rem;color:var(--muted);padding:0.6rem 0;border-bottom:1px solid var(--border);">KNX-Partner</div>
+        <div style="font-size:0.82rem;color:var(--muted);padding:0.6rem 0;border-bottom:1px solid var(--border);">E-Marken-Betrieb</div>
+        <div style="font-size:0.82rem;color:var(--muted);padding:0.6rem 0;">TÜV-geprüft nach DGUV V3</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="kontakt">
+  <h2>Projekt besprechen</h2>
+  <p>Rufen Sie an oder schreiben Sie uns – kostenlose Erstberatung.</p>
+  <a href="tel:+4969123456" class="phone">069 / 123 456 78</a>
+  <a href="#" class="btn">Anfrage senden</a>
+</section>
+<footer>
+  <p>Elektro Schäfer GmbH · Musterstraße 12 · 60311 Frankfurt am Main</p>
+  <p style="margin-top:0.5rem;"><a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+  <p style="margin-top:1rem;font-size:0.65rem;color:rgba(255,255,255,0.25);">Konzeptprojekt – erstellt von QaiserWebDesign</p>
+</footer>
+</body>
+</html>

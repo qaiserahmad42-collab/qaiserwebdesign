@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Café Morgenrot – Kaffee & Kuchen in Offenbach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f9f3eb;--brown:#6b3a2a;--warm:#c4653a;--cream:#fff8f0;--text:#5c4a3f;--muted:#9a877a;--border:#e0d5c8}
+body{font-family:'Work Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+html,body{overflow-x:hidden;max-width:100%}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(249,243,235,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.logo{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;color:var(--brown);text-decoration:none}
+.nav-links{display:flex;gap:1.8rem;list-style:none}
+.nav-links a{color:var(--muted);font-size:0.8rem;text-decoration:none;font-weight:400}
+.nav-links a:hover{color:var(--warm)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:6rem 2rem;max-width:1000px;margin:0 auto}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;line-height:1.12;color:var(--brown);margin-bottom:1rem}
+.hero h1 em{font-style:italic;color:var(--warm);font-weight:400}
+.hero p{font-size:0.92rem;color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:2rem}
+.btn{display:inline-block;background:var(--warm);color:#fff;padding:0.8rem 1.8rem;font-size:0.82rem;font-weight:500;text-decoration:none;border-radius:100px;transition:all 0.2s}
+.btn:hover{background:#a85430;transform:translateY(-2px)}
+.hero-img{background:var(--brown);border-radius:200px 200px 20px 20px;height:420px;display:grid;place-items:center}
+.hero-img span{font-family:'Fraunces',serif;font-size:3rem;color:rgba(255,255,255,0.15);font-weight:700;transform:rotate(-8deg)}
+.menu{padding:6rem 2rem;background:var(--cream);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.menu .wrap{max-width:900px;margin:0 auto}
+.menu h2{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:700;color:var(--brown);margin-bottom:0.3rem}
+.menu .sub{font-size:0.85rem;color:var(--muted);font-weight:300;margin-bottom:2.5rem}
+.menu-cats{display:flex;gap:0.5rem;margin-bottom:2rem;flex-wrap:wrap}
+.menu-cat{padding:0.4rem 1rem;border-radius:100px;font-size:0.78rem;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:'Work Sans',sans-serif}
+.menu-cat.on{background:var(--brown);color:#fff;border-color:var(--brown)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.5rem}
+.menu-item{display:flex;justify-content:space-between;align-items:baseline;padding:0.8rem 0;border-bottom:1px solid var(--border)}
+.mi-name{font-size:0.88rem;font-weight:500;color:var(--text)}
+.mi-desc{font-size:0.75rem;color:var(--muted);font-weight:300}
+.mi-price{font-family:'Fraunces',serif;font-weight:700;font-size:0.9rem;color:var(--warm);white-space:nowrap;margin-left:1rem}
+.story{padding:6rem 2rem}
+.story .wrap{max-width:700px;margin:0 auto;text-align:center}
+.story h2{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:700;color:var(--brown);margin-bottom:1.2rem}
+.story p{font-size:0.9rem;color:var(--muted);font-weight:300;line-height:1.85;margin-bottom:1rem}
+.story-vals{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;text-align:center}
+.sv-title{font-family:'Fraunces',serif;font-size:0.95rem;font-weight:700;color:var(--brown);margin-bottom:0.3rem}
+.sv-text{font-size:0.78rem;color:var(--muted);font-weight:300;line-height:1.6}
+.visit{padding:5rem 2rem;background:var(--brown);color:#fff;text-align:center}
+.visit h2{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:700;margin-bottom:0.5rem}
+.visit p{font-size:0.88rem;color:rgba(255,255,255,0.65);font-weight:300;margin-bottom:2rem}
+.visit-info{display:flex;gap:3rem;justify-content:center;margin-bottom:2.5rem;flex-wrap:wrap}
+.vi-label{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4);margin-bottom:0.3rem}
+.vi-value{font-size:0.88rem;color:#fff}
+footer{padding:2rem;text-align:center;font-size:0.72rem;color:var(--muted);border-top:1px solid var(--border)}
+footer a{color:var(--muted);text-decoration:none}
+@media(max-width:768px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-img{height:280px;border-radius:20px}
+  .menu-grid{grid-template-columns:1fr}
+  .story-vals{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#" class="logo">Café Morgenrot</a>
+  <ul class="nav-links">
+    <li><a href="#karte">Karte</a></li>
+    <li><a href="#story">Unsere Geschichte</a></li>
+    <li><a href="#besuch">Besuchen</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <h1>Kaffee mit <em>Seele</em></h1>
+      <p>Handgerösteter Spezialitätenkaffee, hausgemachte Kuchen und ein Ort zum Durchatmen. Täglich frisch – seit 2019 in Offenbach.</p>
+      <a href="#karte" class="btn">Unsere Karte</a>
+    </div>
+    <div class="hero-img"><span>CM</span></div>
+  </div>
+</section>
+<section class="menu" id="karte">
+  <div class="wrap">
+    <h2>Unsere Karte</h2>
+    <p class="sub">Saisonal, regional, mit Liebe gemacht.</p>
+    <div class="menu-cats">
+      <button class="menu-cat on">Kaffee</button>
+      <button class="menu-cat">Kuchen</button>
+      <button class="menu-cat">Frühstück</button>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-item"><div><div class="mi-name">Espresso</div><div class="mi-desc">Hausmischung, kräftig</div></div><div class="mi-price">2,80 €</div></div>
+      <div class="menu-item"><div><div class="mi-name">Cappuccino</div><div class="mi-desc">Mit Hafermilch +0,40€</div></div><div class="mi-price">3,90 €</div></div>
+      <div class="menu-item"><div><div class="mi-name">Flat White</div><div class="mi-desc">Doppelter Espresso, Milchschaum</div></div><div class="mi-price">4,20 €</div></div>
+      <div class="menu-item"><div><div class="mi-name">Pour Over</div><div class="mi-desc">Filterkaffee, wechselnde Röstung</div></div><div class="mi-price">4,50 €</div></div>
+      <div class="menu-item"><div><div class="mi-name">Matcha Latte</div><div class="mi-desc">Bio-Matcha aus Uji, Japan</div></div><div class="mi-price">4,80 €</div></div>
+      <div class="menu-item"><div><div class="mi-name">Cold Brew</div><div class="mi-desc">18h gezogen, on the rocks</div></div><div class="mi-price">4,50 €</div></div>
+    </div>
+  </div>
+</section>
+<section class="story" id="story">
+  <div class="wrap">
+    <h2>Unsere Geschichte</h2>
+    <p>Café Morgenrot entstand aus einer einfachen Idee: Ein Ort, an dem guter Kaffee und echte Handwerkskunst zusammenkommen. Wir rösten unsere Bohnen in kleinen Chargen, backen jeden Morgen frisch und kennen die meisten unserer Gäste beim Namen.</p>
+    <p>Unser Kaffee stammt aus Direkthandel mit Farmen in Äthiopien, Kolumbien und Guatemala. Fair gehandelt, transparente Lieferketten.</p>
+    <div class="story-vals">
+      <div><div class="sv-title">Direkt gehandelt</div><div class="sv-text">Langfristige Beziehungen zu Kaffeefarmern weltweit.</div></div>
+      <div><div class="sv-title">Täglich frisch</div><div class="sv-text">Kuchen und Gebäck werden jeden Morgen im Haus gebacken.</div></div>
+      <div><div class="sv-title">Nachhaltig</div><div class="sv-text">Mehrwegbecher, kompostierbares Geschirr, regionaler Einkauf.</div></div>
+    </div>
+  </div>
+</section>
+<section class="visit" id="besuch">
+  <h2>Besuchen Sie uns</h2>
+  <p>Wir freuen uns auf Ihren Besuch – mit oder ohne Laptop.</p>
+  <div class="visit-info">
+    <div><div class="vi-label">Adresse</div><div class="vi-value">Kaiserstraße 48, Offenbach</div></div>
+    <div><div class="vi-label">Öffnungszeiten</div><div class="vi-value">Mo–Fr 7:30–18:00 · Sa 8:00–16:00</div></div>
+    <div><div class="vi-label">Kontakt</div><div class="vi-value">hallo@cafe-morgenrot.de</div></div>
+  </div>
+  <a href="#" class="btn" style="background:var(--warm);">Route planen</a>
+</section>
+<footer>
+  <p>Café Morgenrot · Kaiserstraße 48 · 63065 Offenbach am Main</p>
+  <p style="margin-top:0.5rem;"><a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+  <p style="margin-top:1rem;font-size:0.65rem;color:rgba(0,0,0,0.25);">Konzeptprojekt – erstellt von QaiserWebDesign</p>
+</footer>
+</body>
+</html>
