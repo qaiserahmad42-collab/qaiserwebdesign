@@ -85,6 +85,38 @@
     .fls a{font-size:0.75rem;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s}
     .fls a:hover{color:#fff}
     @media(max-width:768px){.nav-links{display:none}.svc-feat{grid-template-columns:1fr}.svc-grid{grid-template-columns:1fr}.usp-grid{grid-template-columns:1fr}}
+
+    /* ── BURGER MENU ── */
+    .burger {
+      display: none;
+      align-items: center; justify-content: center;
+      background: none; border: none;
+      font-size: 2rem; cursor: pointer;
+      color: var(--ink); width: 44px; height: 44px;
+      padding: 0; line-height: 1;
+    }
+    .mob-nav {
+      display: none;
+      flex-direction: column;
+      background: var(--white);
+      border-bottom: 2px solid var(--border);
+      position: fixed; top: 60px; left: 0; right: 0; z-index: 99;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .mob-nav a {
+      padding: 1.2rem 2rem; font-size: 1.1rem; font-weight: 500;
+      color: var(--ink); text-decoration: none;
+      border-bottom: 1px solid var(--border); display: block;
+    }
+    .mob-nav a.mob-cta {
+      background: var(--orange); color: #fff !important;
+      font-weight: 600; text-align: center; border: none;
+    }
+    .mob-nav.show { display: flex; }
+    @media (max-width: 768px) {
+      .nav-links { display: none !important; }
+      .burger { display: flex !important; }
+    }
   </style>
 </head>
 <body>
@@ -213,6 +245,22 @@
   <span class="fn">© 2025 QaiserWebDesign · Qaiser Ahmad · Dreieich</span>
   <div class="fls"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a><a href="https://qaiserconsulting.de" target="_blank">QA & Testing</a></div>
 </div></footer>
-<script>function toggleFaq(btn){const a=btn.nextElementSibling;const i=btn.querySelector('span');a.classList.toggle('open');i.textContent=a.classList.contains('open')?'−':'+'}</script>
+<script>function toggleFaq(btn){const a=btn.nextElementSibling;const i=btn.querySelector('span');a.classList.toggle('open');i.textContent=a.classList.contains('open')?'−':'+'}
+  // Burger Menu
+  var burgerBtn = document.getElementById('burgerBtn');
+  var mobNav = document.getElementById('mobNav');
+  if (burgerBtn && mobNav) {
+    burgerBtn.addEventListener('click', function() {
+      mobNav.classList.toggle('show');
+      burgerBtn.textContent = mobNav.classList.contains('show') ? '✕' : '☰';
+    });
+    mobNav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        mobNav.classList.remove('show');
+        burgerBtn.textContent = '☰';
+      });
+    });
+  }
+</script>
 </body>
 </html>
