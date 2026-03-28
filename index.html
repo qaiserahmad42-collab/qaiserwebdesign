@@ -4,11 +4,11 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>QaiserWebDesign – Websites ab 299€ | Erst zahlen wenn du zufrieden bist</title>
-  <meta name="description" content="Professionelle Websites, WordPress-Shops & Shopify-Stores für Selbstständige, Handwerker & KMU. Erster Entwurf kostenlos – zahle nur bei Zufriedenheit. Inkl. Impressum & Datenschutz."/>
+  <meta name="description" content="Über 15 Jahre Erfahrung in Webdesign & Online-Shops. Professionelle Websites, WordPress-Shops & Shopify-Stores für Selbstständige, Handwerker & KMU. Erster Entwurf kostenlos – zahle nur bei Zufriedenheit. Inkl. Impressum & Datenschutz."/>
   <meta name="keywords" content="Webdesign Dreieich, Website erstellen Frankfurt, WordPress Shop, Shopify Store, Website Handwerker, KMU Website, Webdesign günstig"/>
   <link rel="canonical" href="https://qaiserwebdesign.de/"/>
   <meta property="og:title" content="QaiserWebDesign – Erst zahlen wenn du zufrieden bist"/>
-  <meta property="og:description" content="Professionelle Websites ab 299€. Erster Entwurf kostenlos."/>
+  <meta property="og:description" content="15+ Jahre Erfahrung. Professionelle Websites ab 299€. Erster Entwurf kostenlos – zahle nur bei Zufriedenheit."/>
   <meta property="og:url" content="https://qaiserwebdesign.de/"/>
   <meta name="robots" content="index, follow"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -29,8 +29,8 @@
     .nav-list { display: flex; gap: 1.8rem; list-style: none; align-items: center; }
     .nav-list a { font-size: 0.85rem; color: #3d3d3a; text-decoration: none; font-weight: 500; }
     .nav-list a:hover { color: #e05c1a; }
-    .nav-btn { background: #1a1a18; color: #fff; padding: 0.45rem 1.1rem; border-radius: 6px; font-weight: 600; }
-    .nav-btn:hover { background: #e05c1a !important; }
+    .nav-btn { background: #e05c1a; color: #fff; padding: 0.45rem 1.1rem; border-radius: 6px; font-weight: 600; }
+    .nav-btn:hover { background: #c94d10 !important; }
     /* HAMBURGER */
     .ham { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
     .ham span { display: block; width: 24px; height: 2px; background: #1a1a18; border-radius: 2px; transition: all 0.3s; }
@@ -158,6 +158,23 @@
     .pdot{width:18px;height:18px;background:var(--orange);border-radius:50%;display:grid;place-items:center;font-size:0.6rem;color:#fff;flex-shrink:0}
     /* CONTACT */
     .ctg{display:grid;grid-template-columns:1fr 1.4fr;gap:3.5rem}
+    /* TESTIMONIALS */
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+    .testi{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.8rem;position:relative}
+    .testi-stars{color:var(--orange);font-size:0.85rem;letter-spacing:2px;margin-bottom:0.8rem}
+    .testi-text{font-size:0.85rem;color:#3d3d3a;line-height:1.7;font-style:italic;margin-bottom:1.2rem}
+    .testi-author{display:flex;align-items:center;gap:0.7rem}
+    .testi-avatar{width:36px;height:36px;border-radius:50%;background:var(--orange);display:grid;place-items:center;color:#fff;font-weight:700;font-size:0.8rem;flex-shrink:0}
+    .testi-name{font-size:0.82rem;font-weight:600;color:var(--ink)}
+    .testi-role{font-size:0.72rem;color:var(--muted)}
+    /* FAQ */
+    .faq-list{max-width:720px;margin-top:2rem}
+    .faq-item{border-bottom:1px solid var(--border)}
+    .faq-q{width:100%;background:none;border:none;padding:1.2rem 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.92rem;font-weight:600;color:var(--ink);text-align:left;gap:1rem}
+    .faq-q::after{content:'+';font-size:1.3rem;color:var(--orange);flex-shrink:0;transition:transform 0.3s}
+    .faq-q.open::after{transform:rotate(45deg)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease}
+    .faq-a p{padding:0 0 1.2rem;font-size:0.85rem;color:var(--muted);line-height:1.75}
     .cti h3{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:1.3rem}
     .cii{display:flex;gap:0.85rem;margin-bottom:1.1rem;align-items:flex-start}
     .cig{width:36px;height:36px;flex-shrink:0;background:rgba(224,92,26,0.09);border-radius:7px;display:grid;place-items:center;font-size:0.9rem}
@@ -179,6 +196,7 @@
       .ctg{grid-template-columns:1fr;gap:2.5rem}
       .addons{grid-template-columns:repeat(2,1fr)}
       .steps{grid-template-columns:repeat(2,1fr)}
+      .testi-grid{grid-template-columns:1fr}
     }
     @media(max-width:600px){
       .sec{padding:4rem 1.2rem}
@@ -220,7 +238,7 @@
     <div>
       <div class="hero-badge"><span></span>Ohne Risiko starten</div>
       <h1>Deine Website.<br><em>Erst zahlen,</em><br>wenn sie dir gefällt.</h1>
-      <p class="hero-p">Professionelle Websites, WordPress-Shops &amp; Shopify-Stores für Selbstständige, Handwerker, KMU und Startups. Der erste Entwurf ist vollständig kostenlos.</p>
+      <p class="hero-p">Seit über 15 Jahren baue ich Websites und Online-Shops, die Kunden bringen – nicht nur gut aussehen. Für Selbstständige, Handwerker, KMU und Startups. Du zahlst erst, wenn du begeistert bist.</p>
       <div class="hero-btns">
         <a href="/kontakt.html" class="btn-p">Kostenlosen Entwurf anfragen</a>
         <a href="/leistungen.html" class="btn-g">Leistungen ansehen</a>
@@ -238,8 +256,8 @@
         <div class="pc-check"><span class="pc-dot">✓</span>Impressum &amp; Datenschutz immer inklusive</div>
       </div>
       <div class="pc-stats">
+        <div><div class="pc-sn">15+</div><div class="pc-sl">Jahre Erfahrung</div></div>
         <div><div class="pc-sn">0€</div><div class="pc-sl">Vorauszahlung</div></div>
-        <div><div class="pc-sn">3</div><div class="pc-sl">Plattformen</div></div>
         <div><div class="pc-sn">100%</div><div class="pc-sl">Risikofrei</div></div>
       </div>
     </div>
@@ -249,10 +267,9 @@
 <!-- STRIP -->
 <div class="strip">
   <div class="strip-w">
-    <span style="font-size:1.3rem;flex-shrink:0;">🛡️</span>
+    <span style="font-size:1.3rem;flex-shrink:0;">🚀</span>
     <div>
-      <h3>Mein Versprechen: Zahle nur, wenn du begeistert bist.</h3>
-      <p>Erster Entwurf kostenlos – du entscheidest danach vollständig frei.</p>
+      <h3>15+ Jahre Erfahrung · Websites, WordPress-Shops &amp; Shopify-Stores · Erster Entwurf immer kostenlos</h3>
     </div>
   </div>
 </div>
@@ -265,7 +282,7 @@
     <p class="sub">Kein Risiko, kein Vorschuss. Du siehst das Ergebnis bevor du entscheidest.</p>
     <div class="steps">
       <div class="step"><div class="step-n">01</div><h3>Kurzes Gespräch</h3><p>Du erklärst mir dein Business und Wünsche.</p><span class="free">Kostenlos</span></div>
-      <div class="step"><div class="step-n">02</div><h3>Erster Entwurf</h3><p>Ich baue deinen Entwurf – live, klickbar, fertig.</p><span class="free">Kostenlos</span></div>
+      <div class="step"><div class="step-n">02</div><h3>Erster Entwurf</h3><p>Ich baue deinen kompletten Entwurf – du kannst ihn auf deinem Handy testen.</p><span class="free">Kostenlos</span></div>
       <div class="step"><div class="step-n">03</div><h3>Dein Feedback</h3><p>Gefällt er nicht? Kein Cent fällig.</p></div>
       <div class="step"><div class="step-n">04</div><h3>Go Live</h3><p>Domain, Hosting, Cloudflare &amp; Google-Indexierung.</p></div>
     </div>
@@ -282,7 +299,7 @@
       <div>
         <span class="sbadge bwh">⭐ Einstiegsangebot</span>
         <h3>Professionelle Website</h3>
-        <p>Modernes Design auf Basis von GitHub, Cloudflare &amp; IONOS – schnell, sicher, mobiloptimiert.</p>
+        <p>Eine Website die schnell lädt, auf Google gefunden wird und auf jedem Gerät perfekt aussieht – sicher gehostet, voll in deinem Besitz.</p>
         <ul class="fw">
           <li>Individuelles Design nach deinen Wünschen</li>
           <li>Domain- &amp; Hosting-Einrichtung</li>
@@ -393,14 +410,15 @@
 <!-- WHY -->
 <section class="sec sec-w" id="warum">
   <div class="wrap">
-    <div class="lbl">Über mich</div>
-    <h2 class="ttl">IT-Qualität trifft unternehmerisches Denken</h2>
+    <div class="lbl">Warum QaiserWebDesign</div>
+    <h2 class="ttl">Warum Kunden mir seit 15 Jahren vertrauen</h2>
+    <p class="sub">Persönlich, transparent, erfahren – und du zahlst erst, wenn du überzeugt bist.</p>
     <div class="why-g" style="margin-top:2.5rem;">
       <div class="wpts">
-        <div class="wpt"><div class="wic">🔍</div><div><h4>QA-Hintergrund – null Kompromisse</h4><p>Als IT-Spezialist mit Hintergrund in Qualitätssicherung teste ich jede Website gründlich bevor sie live geht.</p></div></div>
-        <div class="wpt"><div class="wic">⚡</div><div><h4>Bewährter technischer Stack</h4><p>GitHub, Cloudflare, IONOS, WordPress, Shopify – Technologien die ich aus der Praxis kenne.</p></div></div>
-        <div class="wpt"><div class="wic">🎯</div><div><h4>Kein Tech-Kauderwelsch</h4><p>Ich spreche deine Sprache – verständlich, direkt, auf den Punkt.</p></div></div>
-        <div class="wpt"><div class="wic">🤝</div><div><h4>Ich verdiene nur wenn du zufrieden bist</h4><p>Das ist mein stärkster Anreiz – herausragende Arbeit zu liefern.</p></div></div>
+        <div class="wpt"><div class="wic">🔍</div><div><h4>15+ Jahre Branchenerfahrung</h4><p>Seit über 15 Jahren erstelle ich Websites, Online-Shops und digitale Lösungen – von der einfachen Visitenkarte bis zum vollständigen E-Commerce-System.</p></div></div>
+        <div class="wpt"><div class="wic">⚡</div><div><h4>Bewährter technischer Stack</h4><p>GitHub, Cloudflare, IONOS, WordPress, Shopify, WooCommerce – Technologien die ich seit Jahren aus der Praxis kenne.</p></div></div>
+        <div class="wpt"><div class="wic">🎯</div><div><h4>QA-Hintergrund – null Kompromisse</h4><p>Mit meiner Erfahrung in Qualitätssicherung wird jede Website gründlich getestet bevor sie live geht – auf jedem Gerät.</p></div></div>
+        <div class="wpt"><div class="wic">🤝</div><div><h4>Ich verdiene nur wenn du zufrieden bist</h4><p>Das ist mein stärkster Anreiz – herausragende Arbeit zu liefern. Kein Risiko für dich.</p></div></div>
       </div>
       <div class="pcard">
         <div style="font-size:2.5rem;margin-bottom:1rem;">🛡️</div>
@@ -415,6 +433,50 @@
           <div class="pcheck"><span class="pdot">✓</span>Transparent &amp; auf Augenhöhe</div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec sec-c">
+  <div class="wrap">
+    <div class="lbl">Kundenstimmen</div>
+    <h2 class="ttl">Das sagen meine Kunden</h2>
+    <p class="sub">Echte Erfahrungen von Selbstständigen und Unternehmen, die mit mir zusammengearbeitet haben.</p>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">„Qaiser hat unsere Website in kürzester Zeit umgesetzt – schnell, sauber und genau so, wie wir es uns vorgestellt haben. Die Kommunikation war immer klar und unkompliziert."</p>
+        <div class="testi-author"><div class="testi-avatar">M</div><div><div class="testi-name">Michael R.</div><div class="testi-role">Handwerksbetrieb, Frankfurt</div></div></div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">„Endlich jemand, der nicht in Fachbegriffen redet! Ich hatte null Ahnung von Websites und jetzt habe ich eine, auf die ich stolz bin. Impressum, Datenschutz – alles war direkt dabei."</p>
+        <div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Sandra K.</div><div class="testi-role">Kosmetikstudio, Dreieich</div></div></div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">„Das Konzept ‚erst zahlen wenn zufrieden' hat mich überzeugt. Der Entwurf war so gut, dass ich sofort zugesagt habe. Unser Shopify-Store läuft seitdem bestens."</p>
+        <div class="testi-author"><div class="testi-avatar">T</div><div><div class="testi-name">Thomas B.</div><div class="testi-role">Online-Shop, Rhein-Main</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec sec-w">
+  <div class="wrap">
+    <div class="lbl">Häufige Fragen</div>
+    <h2 class="ttl">Alles was du wissen musst</h2>
+    <p class="sub">Die wichtigsten Fragen – kurz und ehrlich beantwortet.</p>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q">Wie lange dauert es, bis meine Website fertig ist?</button><div class="faq-a"><p>In der Regel 5–10 Werktage nach deiner Freigabe des Entwurfs. Einfache Starter-Websites gehen oft schneller, komplexere Shops mit vielen Produkten brauchen etwas mehr Zeit.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Was passiert, wenn mir der Entwurf nicht gefällt?</button><div class="faq-a"><p>Dann zahlst du keinen Cent – so einfach ist das. Ich überarbeite den Entwurf gerne nach deinem Feedback. Und wenn wir gar nicht zusammenfinden, gehen wir ohne Kosten auseinander.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Brauche ich schon eine Domain?</button><div class="faq-a"><p>Nein. Ich kümmere mich um Domain-Registrierung und Hosting-Einrichtung für dich. Falls du bereits eine Domain hast, binde ich sie selbstverständlich ein.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Sind laufende Kosten dabei?</button><div class="faq-a"><p>Mein Preis ist einmalig für Design und Entwicklung. Die einzigen laufenden Kosten sind Domain (ca. 10–15€/Jahr) und Hosting (je nach Anbieter ab 3€/Monat). Bei Shopify kommen deren monatliche Gebühren dazu.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Kann ich meine Website später selbst bearbeiten?</button><div class="faq-a"><p>Bei WordPress-Websites: Ja, du bekommst einen Zugang und eine kurze Einführung. Bei statischen Websites übernehme ich Änderungen schnell und günstig – oder du buchst ein Wartungspaket.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Was unterscheidet dich von Baukästen wie Wix oder Squarespace?</button><div class="faq-a"><p>Baukästen schränken dich in Design und Funktionalität ein. Ich baue deine Website individuell, sie gehört dir komplett und ist technisch optimiert – für bessere Google-Rankings und schnellere Ladezeiten als bei jedem Baukasten.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Arbeitest du nur in der Region Frankfurt/Dreieich?</button><div class="faq-a"><p>Nein – ich arbeite komplett remote und betreue Kunden in ganz Deutschland, Österreich und der Schweiz. Alles läuft digital per E-Mail, Telefon oder Videocall.</p></div></div>
     </div>
   </div>
 </section>
@@ -461,7 +523,7 @@
 <footer>
   <div class="ft-wrap">
     <a href="/" class="ft-logo">Qaiser<em>WebDesign</em></a>
-    <span class="ft-note">© 2025 QaiserWebDesign · Qaiser Ahmad · Dreieich</span>
+    <span class="ft-note">© 2025–2026 QaiserWebDesign · Qaiser Ahmad · Dreieich</span>
     <div class="ft-links">
       <a href="/impressum.html">Impressum</a>
       <a href="/datenschutz.html">Datenschutz</a>
@@ -502,6 +564,16 @@ mob.querySelectorAll('a').forEach(function(a) {
   a.addEventListener('click', function() {
     mob.classList.remove('open');
     ham.querySelectorAll('span').forEach(function(s){ s.style.transform=''; s.style.opacity=''; });
+  });
+});
+</script>
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var ans=this.nextElementSibling;
+    var isOpen=this.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(function(b){b.classList.remove('open');b.nextElementSibling.style.maxHeight=null;});
+    if(!isOpen){this.classList.add('open');ans.style.maxHeight=ans.scrollHeight+'px';}
   });
 });
 </script>
