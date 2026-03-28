@@ -150,7 +150,11 @@ ham.addEventListener('click', function() {
     spans[2].style.transform = '';
   }
 });
-mob.querySelectorAll('a').);
+mob.querySelectorAll('a').forEach(function(a) {
+  a.addEventListener('click', function() {
+    mob.classList.remove('open');
+    ham.querySelectorAll('span').forEach(function(s){ s.style.transform=''; s.style.opacity=''; });
+  });
 });
 </script>
 </body>
