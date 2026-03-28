@@ -26,7 +26,6 @@
     .logo em{font-style:normal;color:var(--orange)}
     .nav-links{display:flex;gap:1.5rem;list-style:none;align-items:center}
     .nav-links a{font-size:0.85rem;color:var(--ink2);text-decoration:none;font-weight:500;transition:color 0.2s}
-    .nav-links a:hover,.nav-links a.active{color:var(--orange)}
     .nav-cta{background:var(--ink)!important;color:#fff!important;padding:0.5rem 1.2rem;border-radius:6px}
     .nav-cta:hover{background:var(--orange)!important}
     .page-hero{padding:8rem 2rem 4rem;text-align:center;background:var(--white);border-bottom:1px solid var(--border)}
@@ -85,52 +84,47 @@
     .fls a{font-size:0.75rem;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s}
     .fls a:hover{color:#fff}
     @media(max-width:768px){.nav-links{display:none}.svc-feat{grid-template-columns:1fr}.svc-grid{grid-template-columns:1fr}.usp-grid{grid-template-columns:1fr}}
-
-    /* ── BURGER MENU ── */
-    .burger {
-      display: none;
-      align-items: center; justify-content: center;
-      background: none; border: none;
-      font-size: 2rem; cursor: pointer;
-      color: var(--ink); width: 44px; height: 44px;
-      padding: 0; line-height: 1;
     }
-    .mob-nav {
-      display: none;
-      flex-direction: column;
-      background: var(--white);
-      border-bottom: 2px solid var(--border);
-      position: fixed; top: 60px; left: 0; right: 0; z-index: 99;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    }
-    .mob-nav a {
-      padding: 1.2rem 2rem; font-size: 1.1rem; font-weight: 500;
-      color: var(--ink); text-decoration: none;
-      border-bottom: 1px solid var(--border); display: block;
-    }
-    .mob-nav a.mob-cta {
-      background: var(--orange); color: #fff !important;
-      font-weight: 600; text-align: center; border: none;
-    }
-    .mob-nav.show { display: flex; }
-    @media (max-width: 768px) {
-      .nav-links { display: none !important; }
-      .burger { display: flex !important; }
-    }
+  
+    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(247,244,239,0.96); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); }
+    .nav-inner { max-width:1080px; margin:0 auto; padding:0 2rem; height:60px; display:flex; align-items:center; justify-content:space-between; }
+    .logo { font-family:'Playfair Display',serif; font-size:1.35rem; font-weight:700; color:var(--ink); text-decoration:none; }
+    .logo em { font-style:normal; color:var(--orange); }
+    .nav-links { display:flex; gap:1.8rem; list-style:none; align-items:center; }
+    .nav-links a { font-size:0.85rem; color:var(--ink2,#3d3d3a); text-decoration:none; font-weight:500; transition:color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--orange); }
+    .nav-cta { background:var(--ink)!important; color:#fff!important; padding:0.5rem 1.2rem; border-radius:6px; font-weight:600!important; }
+    .nav-cta:hover { background:var(--orange)!important; }
+    /* Burger */
+    .burger { display:none; align-items:center; justify-content:center; background:none; border:none; font-size:1.8rem; cursor:pointer; color:var(--ink); width:40px; height:40px; padding:0; }
+    .mob-nav { display:none; flex-direction:column; position:fixed; top:60px; left:0; right:0; z-index:99; background:#fff; border-bottom:2px solid var(--border,#e4e0d8); box-shadow:0 8px 24px rgba(0,0,0,0.1); }
+    .mob-nav a { padding:1.1rem 2rem; font-size:1rem; font-weight:500; color:#1a1a18; text-decoration:none; border-bottom:1px solid #e4e0d8; display:block; }
+    .mob-nav .mcta { background:#e05c1a; color:#fff!important; font-weight:700; text-align:center; border:none; }
+    .mob-nav.open { display:flex; }
+    @media(max-width:768px) { .nav-links{display:none!important;} .burger{display:flex!important;} }
   </style>
 </head>
 <body>
-<nav><div class="nav-inner">
-  <a href="/" class="logo">Qaiser<em>WebDesign</em></a>
-  <ul class="nav-links">
-    <li><a href="/">Startseite</a></li>
-    <li><a href="/leistungen.html" class="active">Leistungen</a></li>
-    <li><a href="/preise.html">Preise</a></li>
-    <li><a href="/ueber-mich.html">Über mich</a></li>
-    <li><a href="/kontakt.html" class="nav-cta">Jetzt anfragen</a></li>
-  </ul>
-</div></nav>
-
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">Qaiser<em>WebDesign</em></a>
+    <ul class="nav-links">
+      <li><a href="/">Startseite</a></li>
+      <li><a href="/leistungen.html"  class='active'>Leistungen</a></li>
+      <li><a href="/preise.html">Preise</a></li>
+      <li><a href="/ueber-mich.html">Über mich</a></li>
+      <li><a href="/kontakt.html" class="nav-cta">Jetzt anfragen</a></li>
+    </ul>
+    <button class="burger" id="brgr">☰</button>
+  </div>
+</nav>
+<div class="mob-nav" id="mNav">
+  <a href="/">Startseite</a>
+  <a href="/leistungen.html">Leistungen</a>
+  <a href="/preise.html">Preise</a>
+  <a href="/ueber-mich.html">Über mich</a>
+  <a href="/kontakt.html" class="mcta">Jetzt anfragen</a>
+</div>
 <div class="page-hero">
   <div class="tag">Leistungen</div>
   <h1>Websites, die Kunden überzeugen –<br>und Google begeistern</h1>
@@ -261,6 +255,23 @@
       });
     });
   }
+</script>
+<script>
+(function(){
+  var b = document.getElementById('brgr');
+  var m = document.getElementById('mNav');
+  if(!b||!m) return;
+  b.addEventListener('click', function(){
+    m.classList.toggle('open');
+    b.textContent = m.classList.contains('open') ? '✕' : '☰';
+  });
+  [].forEach.call(m.querySelectorAll('a'), function(a){
+    a.addEventListener('click', function(){
+      m.classList.remove('open');
+      b.textContent = '☰';
+    });
+  });
+})();
 </script>
 </body>
 </html>
