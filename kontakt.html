@@ -18,14 +18,6 @@
     :root{--cream:#f7f4ef;--white:#fff;--ink:#1a1a18;--ink2:#3d3d3a;--muted:#8a8880;--border:#e4e0d8;--orange:#e05c1a;--green:#2d6a4f}
     body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
     .wrap{max-width:1080px;margin:0 auto;padding:0 2rem}
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(247,244,239,0.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
-    .nav-inner{max-width:1080px;margin:0 auto;padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ink);text-decoration:none}
-    .logo em{font-style:normal;color:var(--orange)}
-    .nav-links{display:flex;gap:1.5rem;list-style:none;align-items:center}
-    .nav-links a{font-size:0.85rem;color:var(--ink2);text-decoration:none;font-weight:500;transition:color 0.2s}
-    .nav-cta{background:var(--ink)!important;color:#fff!important;padding:0.5rem 1.2rem;border-radius:6px}
-    .nav-cta:hover{background:var(--orange)!important}
     .hero-contact{padding:8rem 2rem 5rem;background:var(--white);border-bottom:1px solid var(--border)}
     .contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;max-width:1080px;margin:0 auto;align-items:start}
     .tag{display:inline-block;font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:0.8rem}
@@ -60,48 +52,52 @@
     .fls{display:flex;gap:1.4rem}
     .fls a{font-size:0.75rem;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s}
     .fls a:hover{color:#fff}
-    @media(max-width:768px){.nav-links{display:none}.contact-grid{grid-template-columns:1fr;gap:2.5rem}.fr{grid-template-columns:1fr}}
+    @media(max-width:768px){.contact-grid{grid-template-columns:1fr;gap:2.5rem}.fr{grid-template-columns:1fr}}
     }
+    
+    .mob-
+    @media(max-width:768px) { }
   
-    nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(247,244,239,0.96); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); }
-    .nav-inner { max-width:1080px; margin:0 auto; padding:0 2rem; height:60px; display:flex; align-items:center; justify-content:space-between; }
-    .logo { font-family:'Playfair Display',serif; font-size:1.35rem; font-weight:700; color:var(--ink); text-decoration:none; }
-    .logo em { font-style:normal; color:var(--orange); }
-    .nav-links { display:flex; gap:1.8rem; list-style:none; align-items:center; }
-    .nav-links a { font-size:0.85rem; color:var(--ink2,#3d3d3a); text-decoration:none; font-weight:500; transition:color 0.2s; }
-    .nav-links a:hover, .nav-links a.active { color:var(--orange); }
-    .nav-cta { background:var(--ink)!important; color:#fff!important; padding:0.5rem 1.2rem; border-radius:6px; font-weight:600!important; }
-    .nav-cta:hover { background:var(--orange)!important; }
-    /* Burger */
-    .burger { display:none; align-items:center; justify-content:center; background:none; border:none; font-size:1.8rem; cursor:pointer; color:var(--ink); width:40px; height:40px; padding:0; }
-    .mob-nav { display:none; flex-direction:column; position:fixed; top:60px; left:0; right:0; z-index:99; background:#fff; border-bottom:2px solid var(--border,#e4e0d8); box-shadow:0 8px 24px rgba(0,0,0,0.1); }
-    .mob-nav a { padding:1.1rem 2rem; font-size:1rem; font-weight:500; color:#1a1a18; text-decoration:none; border-bottom:1px solid #e4e0d8; display:block; }
-    .mob-nav .mcta { background:#e05c1a; color:#fff!important; font-weight:700; text-align:center; border:none; }
-    .mob-nav.open { display:flex; }
-    @media(max-width:768px) { .nav-links{display:none!important;} .burger{display:flex!important;} }
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(247,244,239,0.97);backdrop-filter:blur(12px);border-bottom:1px solid #e4e0d8;}
+    .ni{max-width:1080px;margin:0 auto;padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between;}
+    .nl{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:#1a1a18;text-decoration:none;}
+    .nl em{font-style:normal;color:#e05c1a;}
+    .nm{display:flex;gap:1.8rem;list-style:none;align-items:center;}
+    .nm a{font-size:0.85rem;color:#3d3d3a;text-decoration:none;font-weight:500;}
+    .nm a:hover{color:#e05c1a;}
+    .nm .nc{background:#1a1a18!important;color:#fff!important;padding:0.45rem 1.1rem;border-radius:6px;font-weight:600!important;}
+    .nm .nc:hover{background:#e05c1a!important;}
+    .hb{display:none;background:none;border:none;font-size:1.9rem;cursor:pointer;color:#1a1a18;width:40px;height:40px;align-items:center;justify-content:center;padding:0;}
+    .hd{display:none;flex-direction:column;position:fixed;top:60px;left:0;right:0;z-index:999;background:#fff;border-bottom:2px solid #e4e0d8;box-shadow:0 6px 20px rgba(0,0,0,0.1);}
+    .hd a{display:block;padding:1.1rem 2rem;font-size:1rem;font-weight:500;color:#1a1a18;text-decoration:none;border-bottom:1px solid #e4e0d8;}
+    .hd a:last-child{background:#e05c1a;color:#fff!important;font-weight:700;text-align:center;border:none;}
+    .hd.on{display:flex;}
+    @media(max-width:768px){.nm{display:none!important;}.hb{display:flex!important;}}
   </style>
 </head>
 <body>
 <nav>
-  <div class="nav-inner">
-    <a href="/" class="logo">Qaiser<em>WebDesign</em></a>
-    <ul class="nav-links">
+  <div class="ni">
+    <a href="/" class="nl">Qaiser<em>WebDesign</em></a>
+    <ul class="nm">
       <li><a href="/">Startseite</a></li>
       <li><a href="/leistungen.html">Leistungen</a></li>
       <li><a href="/preise.html">Preise</a></li>
       <li><a href="/ueber-mich.html">Über mich</a></li>
-      <li><a href="/kontakt.html" class="nav-cta  active">Jetzt anfragen</a></li>
+      <li><a href="/kontakt.html" class="nc" style="color:#e05c1a;">Jetzt anfragen</a></li>
     </ul>
-    <button class="burger" id="brgr">☰</button>
+    <button class="hb" id="hb">☰</button>
   </div>
 </nav>
-<div class="mob-nav" id="mNav">
+<div class="hd" id="hd">
   <a href="/">Startseite</a>
   <a href="/leistungen.html">Leistungen</a>
   <a href="/preise.html">Preise</a>
   <a href="/ueber-mich.html">Über mich</a>
-  <a href="/kontakt.html" class="mcta">Jetzt anfragen</a>
+  <a href="/kontakt.html">Jetzt anfragen</a>
 </div>
+
+
 
 
 <div class="hero-contact">
@@ -158,20 +154,18 @@
   <a href="/" class="fl">Qaiser<em>WebDesign</em></a>
   <span class="fn">© 2025 QaiserWebDesign · Qaiser Ahmad · Dreieich</span>
   <div class="fls"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html
+
 <script>
 (function(){
-  var b = document.getElementById('brgr');
-  var m = document.getElementById('mNav');
-  if(!b||!m) return;
-  b.addEventListener('click', function(){
-    m.classList.toggle('open');
-    b.textContent = m.classList.contains('open') ? '✕' : '☰';
-  });
-  [].forEach.call(m.querySelectorAll('a'), function(a){
-    a.addEventListener('click', function(){
-      m.classList.remove('open');
-      b.textContent = '☰';
-    });
+  var btn=document.getElementById('hb');
+  var drp=document.getElementById('hd');
+  if(!btn||!drp)return;
+  btn.onclick=function(){
+    drp.classList.toggle('on');
+    btn.textContent=drp.classList.contains('on')?'✕':'☰';
+  };
+  drp.querySelectorAll('a').forEach(function(a){
+    a.onclick=function(){drp.classList.remove('on');btn.textContent='☰';};
   });
 })();
 </script>
